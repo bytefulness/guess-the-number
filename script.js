@@ -55,6 +55,7 @@ document.querySelector('.check').addEventListener('click', function () {
     if (score > 1) {
       changeText('.message', guess > secretNumber ? 'Too high' : 'Too low');
       score--;
+      document.querySelector('body').style.backgroundColor = '#222';
       changeText('.score', score);
     } else {
       changeText('.message', '😡 You lost the game!');
